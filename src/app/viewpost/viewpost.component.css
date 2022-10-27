@@ -1,0 +1,15 @@
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.delete-icon {
+  color: rgba(206, 15, 15, 0.864);
+}

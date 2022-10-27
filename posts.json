@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "1st Entry",
+      "author": "Kshitij Pratihast",
+      "content": "This is a sample food blog post. Manually edited as well",
+      "isVeg": false,
+      "cookingTime": "23 mins",
+      "publishedOn": "Thu Oct 27 2022",
+      "id": 1
+    },
+    {
+      "title": "2nd Entry",
+      "author": "Kshitij Pratihast",
+      "content": "This is a sample food blog post. Manually edited as well",
+      "isVeg": true,
+      "cookingTime": "45 mins",
+      "publishedOn": "Wed Oct 26 2022",
+      "id": 2
+    }
+  ],
+  "adminUser": [
+    {
+      "username": "kp",
+      "password": "c62d65c39b6d3a9a347ce090db3659f6"
+    }
+  ]
+}

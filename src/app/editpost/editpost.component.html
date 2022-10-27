@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+    <span>You are in editing mode</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button>
+        <mat-icon routerLink="">home</mat-icon>
+    </button>
+</mat-toolbar>
+<form class="content" [formGroup]="options">
+<mat-form-field appearance="fill" [style.width.px]=327>
+    <mat-label>Author</mat-label>
+    <input matInput formControlName="author" [(ngModel)]="post.author">
+</mat-form-field>
+<mat-form-field appearance="fill" [style.width.px]=327>
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" [(ngModel)]="post.title">
+</mat-form-field>
+<mat-form-field appearance="fill" [style.width.px]=327>
+<mat-label>Content</mat-label>
+<textarea matInput formControlName="content" [(ngModel)]="post.content">
+</textarea>
+</mat-form-field>
+<div>
+<mat-form-field appearance="fill" [style.width.px]=170>
+<mat-label>Type</mat-label>
+<mat-select formControlName="isVeg" [(ngModel)]="post.isVeg">
+    <mat-option value="one">Veg</mat-option>
+    <mat-option value="two">Non-Veg</mat-option>
+</mat-select>
+</mat-form-field>
+<!-- <mat-form-field appearance="fill" [style.width.px]=150>
+    <mat-label>Cooking Time (in Mins.)</mat-label>
+    <input matInput formControlName="cookingTime" [(ngModel)]="post.cookingTime.split(' ')[0]">
+</mat-form-field> -->
+<span></span>
+<span></span>
+<mat-form-field appearance="fill" floatLabel="always" [style.width.px]=150>
+    <mat-label>Cooking Time</mat-label>
+    <input matInput formControlName="cookingTime" [(ngModel)]="post.cookingTime.split(' ')[0]">
+    <span matSuffix>Mins</span>
+</mat-form-field>
+</div>
+<div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="confirmEdit()">Confirm</button>
+    <span></span>
+    <span></span>
+    <button mat-raised-button color="warn" routerLink="">Cancel</button>
+</div>
+
